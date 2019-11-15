@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @keyframes typing {
   from {
     width: 0%;
@@ -33,26 +31,29 @@
 $grey: #7E7B86;
 $orange: #ECB404;
 $black: #333;
+$anime-time: 0.5s;
 
 p, a {
   font: inherit;
   color: inherit;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 nav {
   background-image: radial-gradient(circle at top left, #2a2a2a 0%, #7e7b86 70%, #cbcbcb 100%);
-  float: left;
-  position: fixed;
-  width: (100%/3);
-  height: 100%;
+  width: 100%;
   color: white;
+  display: table;
 }
 
 main {
   background-color: $orange;
+  width: 100%;
   display: flex;
-  float: right;
-  width: (2*100%/3);
 }
 
 footer {
@@ -62,62 +63,85 @@ footer {
   display: flex;
   color: white;
   height: 80px;
-  width: (2*100%/3);
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
 
 .what-am-i {
-  padding: 75px 50px;
+  padding: 50px 50px 30px;
+  width: 100%;
 }
 
-.what-am-i li {
+.what-am-i ul {
+  display: inline-grid;
+}
+
+.wai-list {
   overflow: hidden;
   box-sizing: border-box;
   white-space: nowrap;
-  animation-fill-mode: forwards;
   visibility: hidden;
-  line-height: 2;
+  line-height: 1.3;
   font-size: 19px;
   font-family: 'Ubuntu', sans-serif;
+  display: inline;
 }
 
-.web {
-  animation: typing 1s steps(30, end);
+@for $i from 0 to 5{
+  .wai-list:nth-child(#{$i+1}) {
+    animation: typing $anime-time steps(30, end);
+    animation-delay: #{$i*0.5}s;
+    animation-fill-mode: forwards;
+  }
 }
 
-.dev {
-  animation: typing 1s steps(30, end);
-  animation-delay: 1s;
-}
-
-.ms {
-  animation: typing 1s steps(30, end);
-  animation-delay: 2s;
-}
-
-.nerd {
-  animation: typing 1s steps(30, end);
-  animation-delay: 3s;
-}
-
-.hsbnd {
-  animation: typing 1s steps(30, end);
-  animation-delay: 4s;
-}
-
-.slave {
+.wai-list:last-child {
   border-right: 4px solid white;
-  animation: typing 1s steps(30, end), blink 1s step-end infinite;
-  animation-delay: 5s;
+  animation: typing $anime-time steps(30, end), blink 1s step-end infinite;
+  animation-delay: (5*$anime-time);
+  animation-fill-mode: forwards;
 }
 
 .where-am-i,
 .social {
-  padding: 10px 50px;
+  padding: 10px 40px;
+  font-size: large;
+  line-height: 2;
 }
 
 .social ul {
   display: flex;
   justify-content: space-evenly;
+  padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+
+  nav {
+    float: left;
+    position: fixed;
+    width: (100%/3);
+    height: 100%;
+  }
+
+  main {
+    float: right;
+    width: (2*100%/3);
+  }
+
+  footer {
+    float: right;
+    display: flex;
+    width: (2*100%/3);
+  }
+
+  .what-am-i {
+    width: auto;
+  }
+
+  .wai-list {
+    line-height: 2;
+  }
+
 }
