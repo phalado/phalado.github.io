@@ -2,12 +2,19 @@
   from {
     width: 0%; }
   to {
-    width: 100%; } }
+    width: 100%; }
+  100% {
+    visibility: visible; } }
 @keyframes blink {
   from, to {
     border-color: transparent; }
   50% {
     border-color: white; } }
+@keyframes fadeIn {
+  99% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
 p, a {
   font: inherit;
   color: inherit; }
@@ -43,15 +50,19 @@ footer {
 .what-am-i li {
   overflow: hidden;
   box-sizing: border-box;
-  white-space: nowrap; }
+  white-space: nowrap;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  line-height: 2;
+  font-size: 19px;
+  font-family: 'Ubuntu', sans-serif; }
 
 .web {
-  animation: typing 1s steps(30, end);
-  animation-fill-mode: forwards; }
+  animation: typing 1s steps(30, end); }
 
 .dev {
   animation: typing 1s steps(30, end);
-  animation-play-state: paused 1s, running; }
+  animation-delay: 1s; }
 
 .ms {
   animation: typing 1s steps(30, end);
@@ -69,5 +80,13 @@ footer {
   border-right: 4px solid white;
   animation: typing 1s steps(30, end), blink 1s step-end infinite;
   animation-delay: 5s; }
+
+.where-am-i,
+.social {
+  padding: 10px 50px; }
+
+.social ul {
+  display: flex;
+  justify-content: space-evenly; }
 
 /*# sourceMappingURL=styles.css.map */
