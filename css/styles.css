@@ -1,0 +1,73 @@
+@keyframes typing {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+@keyframes blink {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: white; } }
+p, a {
+  font: inherit;
+  color: inherit; }
+
+nav {
+  background-image: radial-gradient(circle at top left, #2a2a2a 0%, #7e7b86 70%, #cbcbcb 100%);
+  float: left;
+  position: fixed;
+  width: 33.3333333333%;
+  height: 100%;
+  color: white; }
+
+main {
+  background-color: #ECB404;
+  display: flex;
+  float: right;
+  width: 66.6666666667%; }
+
+footer {
+  background-color: #333;
+  position: relative;
+  float: right;
+  display: flex;
+  color: white;
+  height: 80px;
+  width: 66.6666666667%;
+  align-items: center;
+  justify-content: center; }
+
+.what-am-i {
+  padding: 75px 50px; }
+
+.what-am-i li {
+  overflow: hidden;
+  box-sizing: border-box;
+  white-space: nowrap; }
+
+.web {
+  animation: typing 1s steps(30, end);
+  animation-fill-mode: forwards; }
+
+.dev {
+  animation: typing 1s steps(30, end);
+  animation-play-state: paused 1s, running; }
+
+.ms {
+  animation: typing 1s steps(30, end);
+  animation-delay: 2s; }
+
+.nerd {
+  animation: typing 1s steps(30, end);
+  animation-delay: 3s; }
+
+.hsbnd {
+  animation: typing 1s steps(30, end);
+  animation-delay: 4s; }
+
+.slave {
+  border-right: 4px solid white;
+  animation: typing 1s steps(30, end), blink 1s step-end infinite;
+  animation-delay: 5s; }
+
+/*# sourceMappingURL=styles.css.map */
