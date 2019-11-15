@@ -29,11 +29,13 @@
 }
 
 $grey: #7E7B86;
-$orange: #ECB404;
+$orange: #FF5733;
 $black: #333;
+$light-blue: #0F9DBC;
 $anime-time: 0.5s;
 
-p, a {
+p,
+a {
   font: inherit;
   color: inherit;
 }
@@ -41,6 +43,19 @@ p, a {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+h1 {
+  text-align-last: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
 }
 
 nav {
@@ -51,9 +66,9 @@ nav {
 }
 
 main {
-  background-color: $orange;
   width: 100%;
-  display: flex;
+  display: grid;
+  height: 100%
 }
 
 footer {
@@ -116,6 +131,51 @@ footer {
   padding: 30px 0;
 }
 
+.header {
+  background-color: $light-blue;
+  color: #fff;
+  width: 100%;
+}
+
+.about {
+  margin: 30px;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+.page-1 {
+  width: 100%;
+  height: auto;
+}
+
+.project {
+  width: 100%;
+  height: auto;
+}
+
+.project-desc {
+  margin: 0 20px 20px;
+  padding-bottom: 20px;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+.project-link {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.project-image {
+  width: 100%
+}
+
+.one {
+  background-color: $orange;
+  color: white;
+}
+
+
 @media (min-width: 768px) {
 
   nav {
@@ -126,6 +186,7 @@ footer {
   }
 
   main {
+    position: relative;
     float: right;
     width: (2*100%/3);
   }
@@ -137,6 +198,7 @@ footer {
   }
 
   .what-am-i {
+    margin-top: 60px;
     width: auto;
   }
 
