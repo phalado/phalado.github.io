@@ -234,6 +234,7 @@ footer {
     display: inherit;
   }
 }
+
 @keyframes typing {
   from {
     width: 0;
@@ -245,6 +246,7 @@ footer {
     visibility: visible;
   }
 }
+
 @keyframes blink {
   from, to {
     border-color: transparent;
@@ -253,6 +255,7 @@ footer {
     border-color: white;
   }
 }
+
 @keyframes fadeIn {
   99% {
     visibility: hidden;
