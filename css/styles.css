@@ -157,19 +157,25 @@ footer {
   display: none; }
 
 .one {
-  background-color: #FF5733; }
+  background-color: #5F9EA0; }
 
 .two {
-  background-color: #15DF34; }
+  background-color: #778899; }
 
 .three {
-  background-color: #A0BC06; }
+  background-color: #00BFFF; }
 
 .four {
-  background-color: #8604C6; }
+  background-color: #2F4F4F; }
 
 .five {
-  background-color: #F10202; }
+  background-color: #000080; }
+
+.six {
+  background-color: #696969; }
+
+.seven {
+  background-color: #008B8B; }
 
 @media (min-width: 768px) {
   nav {

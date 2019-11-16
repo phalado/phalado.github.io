@@ -36,6 +36,13 @@ $green: #15DF34;
 $yellow: #A0BC06;
 $purple: #8604C6;
 $red: #F10202;
+$cadetblue: #5F9EA0;
+$lightslategray: #778899;
+$deepskyblue: #00BFFF;
+$darkslategray: #2F4F4F;
+$navy: #000080;
+$dimgray: #696969;
+$darkcyan: #008B8B;
 $anime-time: 0.5s;
 
 p,
@@ -185,11 +192,13 @@ footer {
 }
 
 $colors: (
-  one: $orange,
-  two: $green,
-  three: $yellow,
-  four: $purple,
-  five: $red,
+  one: $cadetblue,
+  two: $lightslategray,
+  three: $deepskyblue,
+  four: $darkslategray,
+  five: $navy,
+  six: $dimgray,
+  seven: $darkcyan,
   );
 
 @each $class, $bgcolor in $colors {
