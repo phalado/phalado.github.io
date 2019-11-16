@@ -1,48 +1,18 @@
-@keyframes typing {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-  100% {
-    visibility: visible;
-  }
-}
-
-@keyframes blink {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
-
-@keyframes fadeIn {
-  99% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
-
-$grey: #7E7B86;
-$orange: #FF5733;
+$grey: #7e7b86;
+$orange: #ff5733;
 $black: #333;
-$light-blue: #0F9DBC;
-$green: #15DF34;
-$yellow: #A0BC06;
-$purple: #8604C6;
-$red: #F10202;
-$cadetblue: #5F9EA0;
+$light-blue: #0f9dbc;
+$green: #15df34;
+$yellow: #a0bc06;
+$purple: #8604c6;
+$red: #f10202;
+$cadetblue: #5f9ea0;
 $lightslategray: #778899;
-$deepskyblue: #00BFFF;
-$darkslategray: #2F4F4F;
+$deepskyblue: #00bfff;
+$darkslategray: #2f4f4f;
 $navy: #000080;
 $dimgray: #696969;
-$darkcyan: #008B8B;
+$darkcyan: #008b8b;
 $anime-time: 0.5s;
 
 p,
@@ -104,7 +74,7 @@ footer {
   width: 100%;
 }
 
-.what-am-i ul {
+.wai {
   display: inline-grid;
 }
 
@@ -143,7 +113,7 @@ footer {
 
 .social ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 30px 0;
 }
 
@@ -249,4 +219,38 @@ $colors: (
     display: inherit;
   }
 
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: white;
+  }
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
 }
