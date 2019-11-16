@@ -32,6 +32,10 @@ $grey: #7E7B86;
 $orange: #FF5733;
 $black: #333;
 $light-blue: #0F9DBC;
+$green: #15DF34;
+$yellow: #A0BC06;
+$purple: #8604C6;
+$red: #F10202;
 $anime-time: 0.5s;
 
 p,
@@ -43,6 +47,11 @@ a {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 h1 {
@@ -151,6 +160,7 @@ footer {
 .project {
   width: 100%;
   height: auto;
+  color: white;
 }
 
 .project-desc {
@@ -167,12 +177,25 @@ footer {
 }
 
 .project-image {
-  width: 100%
+  width: 100%;
 }
 
-.one {
-  background-color: $orange;
-  color: white;
+.project-video {
+  display: none;
+}
+
+$colors: (
+  one: $orange,
+  two: $green,
+  three: $yellow,
+  four: $purple,
+  five: $red,
+  );
+
+@each $class, $bgcolor in $colors {
+  .#{$class} {
+    background-color: $bgcolor;
+  }
 }
 
 
@@ -181,20 +204,20 @@ footer {
   nav {
     float: left;
     position: fixed;
-    width: (100%/3);
+    width: (100%/5);
     height: 100%;
   }
 
   main {
     position: relative;
     float: right;
-    width: (2*100%/3);
+    width: (4*100%/5);
   }
 
   footer {
     float: right;
     display: flex;
-    width: (2*100%/3);
+    width: (4*100%/5);
   }
 
   .what-am-i {
@@ -204,6 +227,17 @@ footer {
 
   .wai-list {
     line-height: 2;
+  }
+
+  .project-image {
+    display: none;
+  }
+
+  .project-video {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    display: inherit;
   }
 
 }
