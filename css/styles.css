@@ -171,7 +171,7 @@ footer {
 }
 
 .two {
-  background-color: #778899;
+  background-color: #789;
 }
 
 .three {
@@ -239,18 +239,22 @@ footer {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
+
   100% {
     visibility: visible;
   }
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     border-color: transparent;
   }
+
   50% {
     border-color: white;
   }
@@ -260,6 +264,7 @@ footer {
   99% {
     visibility: hidden;
   }
+
   100% {
     visibility: visible;
   }

@@ -7,7 +7,7 @@ $yellow: #a0bc06;
 $purple: #8604c6;
 $red: #f10202;
 $cadetblue: #5f9ea0;
-$lightslategray: #778899;
+$lightslategray: #789;
 $deepskyblue: #00bfff;
 $darkslategray: #2f4f4f;
 $navy: #000080;
@@ -54,7 +54,7 @@ nav {
 main {
   width: 100%;
   display: grid;
-  height: 100%
+  height: 100%;
 }
 
 footer {
@@ -169,7 +169,7 @@ $colors: (
   five: $navy,
   six: $dimgray,
   seven: $darkcyan,
-  );
+);
 
 @each $class, $bgcolor in $colors {
   .#{$class} {
@@ -178,7 +178,6 @@ $colors: (
 }
 
 @media (min-width: 768px) {
-
   nav {
     float: left;
     position: fixed;
@@ -217,7 +216,6 @@ $colors: (
     background-color: white;
     display: inherit;
   }
-
 }
 
 @keyframes typing {
@@ -235,7 +233,8 @@ $colors: (
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     border-color: transparent;
   }
 
