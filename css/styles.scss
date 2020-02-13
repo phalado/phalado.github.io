@@ -15,6 +15,10 @@ $dimgray: #696969;
 $darkcyan: #008b8b;
 $anime-time: 0.5s;
 
+body {
+  background-color: #ddd;
+}
+
 p,
 a {
   font: inherit;
@@ -23,11 +27,10 @@ a {
 
 a {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
   color: black;
 }
 
@@ -45,16 +48,30 @@ h2 {
 }
 
 nav {
-  background-image: radial-gradient(circle at top left, #2a2a2a 0%, #7e7b86 70%, #cbcbcb 100%);
-  width: 100%;
+  // background-image:
+  //   radial-gradient(
+  //     circle at top left, 
+  //     #2a2a2a 0%, 
+  //     #7e7b86 70%, 
+  //     #cbcbcb 100%);
+  background-color: #3e588c;
+  width: 90%;
   color: white;
   display: table;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 main {
   width: 100%;
   display: grid;
   height: 100%;
+  // background-image:
+  //   radial-gradient(
+  //     circle at top right, 
+  //     #2a2a2a 0%, 
+  //     #7e7b86 70%, 
+  //     #cbcbcb 100%);
 }
 
 footer {
@@ -67,6 +84,7 @@ footer {
   width: 100%;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .what-am-i {
@@ -111,16 +129,53 @@ footer {
   line-height: 2;
 }
 
+.social {
+  background-image: 
+    radial-gradient(
+      grey,
+      black);
+  margin: 25px;
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+
+.social-visit {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+  padding-top: 30px;
+}
+
 .social ul {
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
 }
 
+.medium:hover {
+  color: black;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.linkedin:hover {
+  color: #007bb5;
+}
+
+.github:hover {
+  color: #211F1F;
+}
+
 .header {
-  background-color: $light-blue;
-  color: #fff;
+  // background-color: $light-blue;
+  background-color: #637aa6;
+  color: white;
   width: 100%;
+  max-width: 98%;
+  margin: 10px auto auto auto;
+  border-radius: 10px;
 }
 
 .about {
@@ -137,7 +192,18 @@ footer {
 .project {
   width: 100%;
   height: auto;
+  background-color: #8ca4d4;
+  max-width: 48%;
+  margin: 10px auto;
+  border-radius: 10px;
   color: white;
+}
+
+.project-title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-desc {
@@ -157,32 +223,43 @@ footer {
   width: 100%;
 }
 
+.project-image2 {
+  width: 49%;
+  height: 200px;
+  padding-top: 4px;
+}
+
+.project-image3 {
+  width: 98%;
+  height: 400px;
+}
+
 .project-video {
   display: none;
 }
 
-$colors: (
-  one: $cadetblue,
-  two: $lightslategray,
-  three: $deepskyblue,
-  four: $darkslategray,
-  five: $navy,
-  six: $dimgray,
-  seven: $darkcyan,
-);
+// $colors: (
+//   one: $cadetblue,
+//   two: $lightslategray,
+//   three: $deepskyblue,
+//   four: $darkslategray,
+//   five: $navy,
+//   six: $dimgray,
+//   seven: $darkcyan,
+// );
 
-@each $class, $bgcolor in $colors {
-  .#{$class} {
-    background-color: $bgcolor;
-  }
-}
+// @each $class, $bgcolor in $colors {
+//   .#{$class} {
+//     background-color: $bgcolor;
+//   }
+// }
 
 @media (min-width: 768px) {
   nav {
     float: left;
     position: fixed;
-    width: (100%/5);
-    height: 100%;
+    width: 18%;
+    height: 98%;
   }
 
   main {
@@ -198,7 +275,7 @@ $colors: (
   }
 
   .what-am-i {
-    margin-top: 60px;
+    margin: auto;
     width: auto;
   }
 
