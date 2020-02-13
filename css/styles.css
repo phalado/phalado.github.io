@@ -49,9 +49,11 @@ footer {
   justify-content: center;
   border-radius: 10px; }
 
+.my-name {
+  text-align: center; }
+
 .about-me {
-  display: flex;
-  justify-content: space-around; }
+  display: block; }
 
 .what-am-i {
   padding: 20px 50px 20px; }
@@ -187,16 +189,29 @@ footer {
 
 .project-image2 {
   width: 49%;
-  height: 200px;
+  height: 100px;
   padding-top: 4px; }
 
 .project-image3 {
   width: 98%;
-  height: 400px; }
+  height: 200px; }
 
 .project-video {
   display: none; }
 
+@media (min-width: 440px) {
+  .my-name {
+    font-size: 24px; }
+
+  .about-me {
+    display: flex;
+    justify-content: space-around; }
+
+  .project-image2 {
+    height: 200px; }
+
+  .project-image3 {
+    height: 400px; } }
 @media (min-width: 1150px) {
   nav {
     float: left;
@@ -215,8 +230,7 @@ footer {
     width: 80%; }
 
   .my-name {
-    font-size: 25px;
-    text-align: center; }
+    font-size: 25px; }
 
   .about-me {
     display: block; }
