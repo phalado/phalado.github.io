@@ -26,7 +26,7 @@ h2 {
 
 nav {
   background-color: #3e588c;
-  width: 90%;
+  width: 98%;
   color: white;
   display: table;
   margin: 10px;
@@ -49,9 +49,12 @@ footer {
   justify-content: center;
   border-radius: 10px; }
 
+.about-me {
+  display: flex;
+  justify-content: space-around; }
+
 .what-am-i {
-  padding: 50px 50px 30px;
-  width: 100%; }
+  padding: 20px 50px 20px; }
 
 .wai {
   display: inline-grid; }
@@ -101,7 +104,8 @@ footer {
 .social {
   padding: 10px 40px;
   font-size: large;
-  line-height: 2; }
+  line-height: 2;
+  text-align: center; }
 
 .social {
   background-image: radial-gradient(grey, black);
@@ -132,6 +136,9 @@ footer {
 .github:hover {
   color: #211F1F; }
 
+.fa-size {
+  font-size: 2em; }
+
 .header {
   background-color: #637aa6;
   color: white;
@@ -153,7 +160,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: #8ca4d4;
-  max-width: 48%;
+  max-width: 98%;
   margin: 10px auto;
   border-radius: 10px;
   color: white; }
@@ -190,7 +197,7 @@ footer {
 .project-video {
   display: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
   nav {
     float: left;
     position: fixed;
@@ -207,12 +214,23 @@ footer {
     display: flex;
     width: 80%; }
 
+  .my-name {
+    font-size: 25px;
+    text-align: center; }
+
+  .about-me {
+    display: block; }
+
   .what-am-i {
     margin: auto;
     width: auto; }
 
+  .fa-size {
+    font-size: 1em; }
+
   .wai-list {
-    line-height: 2; }
+    line-height: 2;
+    font-size: 13px; }
 
   .project-image {
     display: none; }
@@ -222,6 +240,25 @@ footer {
     height: 800px;
     background-color: white;
     display: inherit; } }
+@media (min-width: 1200px) {
+  .fa-size {
+    font-size: 1.5em; }
+
+  .wai-list {
+    font-size: 15px; }
+
+  .project {
+    width: 100%;
+    max-width: 48%; } }
+@media (min-width: 1300px) {
+  .wai-list {
+    font-size: 17px; } }
+@media (min-width: 1400px) {
+  .fa-size {
+    font-size: 2em; }
+
+  .wai-list {
+    font-size: 19px; } }
 @keyframes typing {
   from {
     width: 0; }
