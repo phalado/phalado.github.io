@@ -193,8 +193,11 @@ footer {
   padding-top: 4px; }
 
 .project-image3 {
+  width: 98%; }
+
+.project-image4 {
   width: 98%;
-  height: 200px; }
+  max-height: 400px; }
 
 .project-video {
   display: none; }
@@ -210,7 +213,7 @@ footer {
   .project-image2 {
     height: 200px; }
 
-  .project-image3 {
+  .project-image4 {
     height: 400px; } }
 @media (min-width: 1150px) {
   nav {
@@ -263,7 +266,10 @@ footer {
 
   .project {
     width: 100%;
-    max-width: 48%; } }
+    max-width: 48%; }
+
+  .project-image3 {
+    height: 250px; } }
 @media (min-width: 1300px) {
   .wai-list {
     font-size: 17px; } }

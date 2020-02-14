@@ -242,7 +242,11 @@ footer {
 
 .project-image3 {
   width: 98%;
-  height: 200px;
+}
+
+.project-image4 {
+  width: 98%;
+  max-height: 400px;
 }
 
 .project-video {
@@ -279,7 +283,7 @@ footer {
     height: 200px;
   }
 
-  .project-image3 {
+  .project-image4 {
     height: 400px;
   }
 }
@@ -351,6 +355,11 @@ footer {
     width: 100%;
     max-width: 48%;
   }
+
+  .project-image3 {
+    height: 250px;
+  }
+
 
 }
 
